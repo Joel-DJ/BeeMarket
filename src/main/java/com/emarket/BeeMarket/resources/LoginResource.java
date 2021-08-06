@@ -1,6 +1,5 @@
 package com.emarket.BeeMarket.resources;
 
-import com.emarket.BeeMarket.dao.Registration;
 import com.emarket.BeeMarket.dao.UserVerification;
 import com.emarket.BeeMarket.model.AppUser;
 import com.emarket.BeeMarket.model.GoogleUser;

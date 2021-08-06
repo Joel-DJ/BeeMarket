@@ -11,7 +11,7 @@ public class Registration {
     private static final String INSERT_USER = "INSERT INTO USERS(EMAILID,EMAIL,USER_NAME,USER_ROLE) VALUES(?,?,?,?)";
 
     public static int registerUser(AppUser appUser) throws SQLException {
-        int rows = 0;
+        int rows;
         try (Connection connection = ConnectionUtil.getConnection();
              PreparedStatement prepareInsert = connection.prepareStatement(INSERT_USER)) {
             prepareInsert.setString(1, appUser.getGoogleId());
